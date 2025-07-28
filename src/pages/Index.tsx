@@ -26,31 +26,36 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-little-dipper bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 safe-area-padding">
-        <div className="container flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-50 w-full border-b border-little-dipper bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center space-x-2">
             <div className="flex h-8 w-8 items-center justify-center rounded-lg gradient-primary">
               <Sparkles className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold">Salesence</span>
+            <span className="text-xl font-bold text-wall-street">Salesence</span>
           </div>
+          
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#features" className="text-sm font-medium text-wall-street hover:text-foreground transition-colors">
+            <a href="#features" className="text-sm font-medium text-buffed-plum hover:text-wall-street transition-colors">
               Features
             </a>
-            <a href="#pricing" className="text-sm font-medium text-wall-street hover:text-foreground transition-colors">
+            <a href="#pricing" className="text-sm font-medium text-buffed-plum hover:text-wall-street transition-colors">
               Pricing
             </a>
-            <Button variant="ghost" size="sm" onClick={handleSignIn}>
+            <Button variant="ghost" size="sm" onClick={handleSignIn} className="text-buffed-plum hover:text-wall-street">
               Sign in
             </Button>
-            <Button size="sm" className="gradient-primary" onClick={handleGetStarted}>
+            <Button size="sm" className="gradient-primary text-white hover:opacity-90" onClick={handleGetStarted}>
               Get Started
             </Button>
           </nav>
-          <div className="flex md:hidden">
-            <Button variant="ghost" size="sm" onClick={handleSignIn}>
+          
+          <div className="flex md:hidden items-center space-x-2">
+            <Button variant="ghost" size="sm" onClick={handleSignIn} className="text-buffed-plum hover:text-wall-street">
               Sign in
+            </Button>
+            <Button size="sm" className="gradient-primary text-white hover:opacity-90" onClick={handleGetStarted}>
+              Get Started
             </Button>
           </div>
         </div>
