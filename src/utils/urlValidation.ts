@@ -5,29 +5,8 @@ export const validateProductUrl = (url: string): { isValid: boolean; error?: str
   }
 
   try {
-    const urlObj = new URL(url);
-    const hostname = urlObj.hostname.toLowerCase();
-    
-    // Check for supported marketplaces
-    const supportedMarketplaces = [
-      'amazon.com', 'amazon.co.uk', 'amazon.ca', 'amazon.de', 'amazon.fr',
-      'ebay.com', 'ebay.co.uk', 'ebay.ca', 'ebay.de', 'ebay.fr',
-      'etsy.com',
-      'shopify.com',
-      'walmart.com',
-      'target.com',
-      'aliexpress.com',
-      'alibaba.com'
-    ];
-
-    const isSupported = supportedMarketplaces.some(domain => 
-      hostname.includes(domain) || hostname.endsWith(domain)
-    );
-
-    if (!isSupported) {
-      return { isValid: false, error: "Please enter a valid marketplace URL (Amazon, eBay, Etsy, etc.)" };
-    }
-
+    // Just check if it's a valid URL format - accept ALL URLs
+    new URL(url);
     return { isValid: true };
   } catch {
     return { isValid: false, error: "Please enter a valid URL" };
