@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,58 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors from design system
+				brilliance: 'hsl(var(--brilliance))',
+				'little-dipper': 'hsl(var(--little-dipper))',
+				'buffed-plum': 'hsl(var(--buffed-plum))',
+				'garish-green': 'hsl(var(--garish-green))',
+				'heavy-grey': 'hsl(var(--heavy-grey))',
+				'wall-street': 'hsl(var(--wall-street))',
+				'pale-grey': 'hsl(var(--pale-grey))',
+				'diamond-cut': 'hsl(var(--diamond-cut))',
+				'lavender-blue': 'hsl(var(--lavender-blue))',
+				'stonewall-grey': 'hsl(var(--stonewall-grey))',
+				'purple-illusion': 'hsl(var(--purple-illusion))',
+				'perrywinkle': 'hsl(var(--perrywinkle))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				'4': '4px',
+				'8': '8px',
+				'12': '12px',
+				'16': '16px',
+				'20': '20px'
+			},
+			fontFamily: {
+				'inter': ['Inter', 'system-ui', 'sans-serif'],
+				'mono': ['IBM Plex Mono', 'Courier New', 'monospace']
+			},
+			fontSize: {
+				'32': '32px',
+				'24': '24px',
+				'20': '20px',
+				'18': '18px',
+				'16': '16px'
+			},
+			spacing: {
+				'8': '8px',
+				'16': '16px',
+				'24': '24px',
+				'44': '44px',
+				'48': '48px',
+				'52': '52px',
+				'56': '56px',
+				'64': '64px'
+			},
+			maxWidth: {
+				'360': '360px',
+				'1280': '1280px'
+			},
+			minHeight: {
+				'120': '120px'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +131,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				shimmer: {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
+				},
+				shake: {
+					'0%, 100%': { transform: 'translateX(0)' },
+					'25%': { transform: 'translateX(-4px)' },
+					'75%': { transform: 'translateX(4px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'shimmer': 'shimmer 1.5s infinite',
+				'shake': 'shake 0.3s ease-in-out'
+			},
+			screens: {
+				'xs': '375px'
 			}
 		}
 	},
