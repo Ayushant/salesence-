@@ -37,38 +37,38 @@ const features = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="py-16 sm:py-24 bg-pale-grey">
+    <section id="features" className="py-12 sm:py-16 lg:py-24 bg-pale-grey">
       <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-wall-street sm:text-4xl">
+        <div className="mx-auto max-w-2xl text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-wall-street">
             Everything you need to{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               optimize your listings
             </span>
           </h2>
-          <p className="mt-6 text-lg leading-8 text-buffed-plum">
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-buffed-plum">
             Professional-grade analysis tools that help you compete with top sellers in any marketplace.
           </p>
         </div>
         
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <Card 
               key={feature.title} 
               className="bg-brilliance border-diamond-cut shadow-subtle hover:shadow-hover transition-all duration-200 group"
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-3 sm:pb-4">
                 <div className="flex items-center space-x-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-lavender-blue group-hover:bg-primary transition-colors duration-200">
-                    <feature.icon className="h-5 w-5 text-primary group-hover:text-white transition-colors duration-200" />
+                  <div className="flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-lavender-blue group-hover:bg-primary transition-colors duration-200 flex-shrink-0">
+                    <feature.icon className="h-4 w-4 sm:h-5 sm:w-5 text-primary group-hover:text-white transition-colors duration-200" />
                   </div>
-                  <CardTitle className="text-lg font-semibold text-wall-street">
+                  <CardTitle className="text-base sm:text-lg font-semibold text-wall-street leading-tight">
                     {feature.title}
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                <p className="text-buffed-plum leading-relaxed">
+                <p className="text-sm sm:text-base text-buffed-plum leading-relaxed">
                   {feature.description}
                 </p>
               </CardContent>

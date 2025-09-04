@@ -31,16 +31,26 @@ export interface MockAnalysisResult {
 }
 
 const productNames = [
-  "Wireless Bluetooth Headphones with Noise Cancellation",
-  "Premium Coffee Maker with Built-in Grinder",
-  "Smart Fitness Tracker with Heart Rate Monitor",
-  "Ergonomic Office Chair with Lumbar Support",
-  "Stainless Steel Water Bottle - 32oz",
-  "LED Desk Lamp with USB Charging Port",
+  "Wireless Bluetooth Headphones with Active Noise Cancellation",
+  "Premium Espresso Machine with Built-in Grinder",
+  "Smart Fitness Tracker with Heart Rate & GPS",
+  "Ergonomic Office Chair with Adjustable Lumbar Support",
+  "Stainless Steel Insulated Water Bottle - 32oz",
+  "LED Desk Lamp with Wireless Charging & USB Port",
   "Portable Phone Stand for Desk and Travel",
-  "Organic Cotton Bed Sheets - Queen Size",
-  "Kitchen Knife Set with Wooden Block",
-  "Bluetooth Speaker with 20-Hour Battery Life"
+  "Organic Cotton Bed Sheets - Queen Size 400 Thread Count",
+  "Professional Kitchen Knife Set with Bamboo Block",
+  "Bluetooth Speaker with 20-Hour Battery Life & Waterproof",
+  "Smart Home Security Camera with Night Vision",
+  "Electric Standing Desk with Memory Preset",
+  "Portable Bluetooth Projector with 4K Support",
+  "Robot Vacuum Cleaner with Mapping Technology",
+  "Wireless Gaming Mouse with RGB Lighting",
+  "Smart Thermostat with Energy Saving Features",
+  "Portable Power Bank with Fast Charging",
+  "Wireless Earbuds with Active Noise Cancellation",
+  "Smart Watch with Health Monitoring",
+  "Electric Bike with Folding Design"
 ];
 
 const categories = [
@@ -49,12 +59,16 @@ const categories = [
 ];
 
 const titleSuggestions = [
-  "Include primary keyword at the beginning",
-  "Add emotional triggers like 'Premium' or 'Professional'",
-  "Mention key benefits in the title",
-  "Use power words like 'Ultimate', 'Advanced', 'Pro'",
-  "Include size/quantity information",
-  "Add seasonal relevance if applicable"
+  "Include primary keyword at the beginning for better SEO",
+  "Add emotional triggers like 'Premium', 'Professional', or 'Luxury'",
+  "Mention key benefits and features in the title",
+  "Use power words like 'Ultimate', 'Advanced', 'Pro', 'Elite'",
+  "Include size/quantity information for clarity",
+  "Add seasonal relevance and trending keywords",
+  "Highlight unique selling propositions (USP)",
+  "Use numbers and specific details to build trust",
+  "Include brand name if well-known",
+  "Add urgency or scarcity indicators when appropriate"
 ];
 
 const descriptionSuggestions = [
@@ -67,12 +81,16 @@ const descriptionSuggestions = [
 ];
 
 const pricingSuggestions = [
-  "Price is 15% higher than market average - consider lowering",
-  "Competitive pricing detected - maintain current price",
-  "Bundle with accessories to increase average order value",
-  "Offer limited-time discount to boost conversions",
-  "Price matches top competitors - good positioning",
-  "Consider psychological pricing (e.g., $19.99 vs $20.00)"
+  "Price is 15% higher than market average - consider lowering to $X.XX for better competitiveness",
+  "Competitive pricing detected - maintain current price point for optimal positioning",
+  "Bundle with complementary accessories to increase average order value by 25%",
+  "Offer limited-time discount (10-15%) to boost conversions and clear inventory",
+  "Price matches top competitors - excellent market positioning maintained",
+  "Consider psychological pricing (e.g., $19.99 vs $20.00) for better conversion rates",
+  "Implement dynamic pricing based on demand and competitor movements",
+  "Offer tiered pricing options to capture different customer segments",
+  "Use price anchoring with 'was/now' pricing strategy",
+  "Consider seasonal pricing adjustments based on market trends"
 ];
 
 const imageSuggestions = [

@@ -1,0 +1,3 @@
+[33m65c3c8b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Add production build (dist folder) - Added optimized production build with minified CSS and JS - Includes index.html, assets, and robots.txt - Ready for deployment
+[33m7b8b34f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix header visibility and add pricing section - Fixed CSS import order issue - Increased header height from h-16 to h-20 - Added mobile navigation with hamburger menu - Added complete pricing section with three tiers - Fixed backdrop-blur visibility issues - Added proper navigation links and functionality
+[33m6699022[m Fix: Header visibility issues
